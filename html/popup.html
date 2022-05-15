@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- 
+      pathname: /shipping/Test_LoginPage.aspx
+      Select Field: Select Ship
+      options: Select Ship, H S C SKIP JACK, H S C BLACK MARLIN, H S C BLUE MARLIN, H S C VIRINGLY, H S C BANGARAM, HAMEEDATH BI, KADEEJA BEEVI, Amindivi, 
+                Lagoons, Cheriyapani, Kavaratti, Minicoy, Corals, Parali, Arabian Sea, Lakshadweep Sea, Valiyapani   
+      Select Field: Select Source
+      options: Select Source, Agatti, Amini, Androth, Bangaram, Beypore, Bitra, Chetlat, Kadmat, Kalpeni, Kavaratti, Kiltan, Kochi, Mangalore, Minicoy
+      Select Field: Select Destination
+      options: Select Destination, Agatti, Amini, Androth, Bangaram, Beypore, Bitra, Chetlat, Kadmat, Kalpeni, Kavaratti, Kiltan, Kochi, Mangalore, Minicoy
+ don't >     pathname: /shipping/Test_LoginPage.aspx
+      
+     -->
+    <div class="containerr">
+      <div class="heading">
+        <div class="logos">
+          <div class="logo-circle">
+            <img class="logo sam" src="../images/sam.png" alt="sam" />
+          </div>
+          <div class="logo-circle">
+            <img class="logo oig" src="../images/oig.png" alt="oig" />
+          </div>
+          <div class="logo-circle">
+            <img
+              class="logo vermont"
+              src="../images/vermont.png"
+              alt="vermont"
+            />
+          </div>
+        </div>
+        <h5>Fill Data for User Verification</h5>
+      </div>
+      <!-- <hr /> -->
+      <div class="inner-container">
+        <div class="c-box">
+          <form action="" method="">
+            <label for="ship" class="bold">Fixed Details</label>
+            <div>
+              <div class="form-group">
+                <select name="ship" id="ship" class="form-control input-field">
+                  <option selected="selected" value="Select Ship">
+                    Select Ship
+                  </option>
+                  <option value="1">H S C SKIP JACK</option>
+                  <option value="2">H S C BLACK MARLIN</option>
+                  <option value="3">H S C BLUE MARLIN</option>
+                  <option value="4">H S C VIRINGLY</option>
+                  <option value="5">H S C BANGARAM</option>
+                  <option value="6">HAMEEDATH BI</option>
+                  <option value="7">KADEEJA BEEVI</option>
+                  <option value="A">Amindivi</option>
+                  <option value="G">Lagoons</option>
+                  <option value="H">Cheriyapani</option>
+                  <option value="K">Kavaratti</option>
+                  <option value="M">Minicoy</option>
+                  <option value="O">Corals</option>
+                  <option value="P">Parali</option>
+                  <option value="R">Arabian Sea</option>
+                  <option value="S">Lakshadweep Sea</option>
+                  <option value="V">Valiyapani</option>
+                </select>
+              </div>
+            </div>
+            <div class="pair">
+              <div class="form-group">
+                <select
+                  name="source"
+                  id="source"
+                  class="form-control input-field"
+                  style="width: 220px"
+                >
+                  <option selected="selected" value="Select Source">
+                    Select Source
+                  </option>
+                  <option value="08">Agatti</option>
+                  <option value="09">Amini</option>
+                  <option value="03">Androth</option>
+                  <option value="11">Bangaram</option>
+                  <option value="13">Beypore</option>
+                  <option value="10">Bitra</option>
+                  <option value="05">Chetlat</option>
+                  <option value="06">Kadmat</option>
+                  <option value="02">Kalpeni</option>
+                  <option value="01">Kavaratti</option>
+                  <option value="07">Kiltan</option>
+                  <option value="12">Kochi</option>
+                  <option value="14">Mangalore</option>
+                  <option value="04">Minicoy</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select
+                  name="destination"
+                  id="destination"
+                  class="form-control input-field"
+                  style="width: 220px"
+                >
+                  <option selected="selected" value="Select Source">
+                    Select Destination
+                  </option>
+                  <option value="08">Agatti</option>
+                  <option value="09">Amini</option>
+                  <option value="03">Androth</option>
+                  <option value="11">Bangaram</option>
+                  <option value="13">Beypore</option>
+                  <option value="10">Bitra</option>
+                  <option value="05">Chetlat</option>
+                  <option value="06">Kadmat</option>
+                  <option value="02">Kalpeni</option>
+                  <option value="01">Kavaratti</option>
+                  <option value="07">Kiltan</option>
+                  <option value="12">Kochi</option>
+                  <option value="14">Mangalore</option>
+                  <option value="04">Minicoy</option>
+                </select>
+              </div>
+            </div>
+            <div class="pair">
+              <div class="form-group">
+                <select
+                  class="form-control input-field"
+                  name="class"
+                  id="class"
+                  style="width: 220px"
+                >
+                  <option selected="selected" value="Select Class">
+                    Select Class
+                  </option>
+                  <option value="D?D">Bunk</option>
+                  <option value="F?B">First</option>
+                  <option value="L?D">Ladies</option>
+                  <option value="O?O">Owners</option>
+                  <option value="S?B">Second</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control input-field"
+                  name="passengers"
+                  placeholder="Passengers"
+                  id="passengers"
+                />
+              </div>
+            </div>
+            <div class="pair">
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control input-field"
+                  name="infants"
+                  placeholder="Infants"
+                  id="infants"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control input-field"
+                  name="mobile"
+                  placeholder="Mobile No"
+                  id="mobile"
+                />
+              </div>
+            </div>
+            <label class="bold" for="passenger_name">Passenger Details</label>
+            <div class="pair">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control input-field"
+                  name="passenger_name"
+                  placeholder="Name"
+                  id="passenger_name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control input-field"
+                  name="photo_id"
+                  placeholder="Photo ID"
+                  id="photo_id"
+                />
+              </div>
+            </div>
+            <div class="pair">
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control input-field"
+                  name="age"
+                  placeholder="Age"
+                  id="age"
+                />
+              </div>
+              <div class="form-group">
+                <select
+                  name="gender"
+                  class="form-control input-field"
+                  id="gender"
+                  style="width: 220px"
+                >
+                  <option value="0">Male</option>
+                  <option value="1">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="pair">
+              <div class="form-group">
+                <select
+                  name="category"
+                  id="category"
+                  class="form-control input-field"
+                  style="width: 220px"
+                >
+                  <option value="Select Category" selected="selected">
+                    Select Category
+                  </option>
+                  <option value="G?1">Government Employee</option>
+                  <option value="I?1">Islander</option>
+                  <option value="P?2">Permit</option>
+                  <option value="R?1">Relatives</option>
+                  <option value="Z?1">Senior Citizen</option>
+                </select>
+              </div>
+              <button
+                id="add_passenger"
+                class="btn-verify"
+                style="width: 220px; margin: 0; height: 38px"
+                type="button"
+              >
+                Add Passenger
+              </button>
+            </div>
+
+            <div class="verify">
+              <button
+                style="width: 220px"
+                id="verify"
+                type="submit"
+                class="btn-verify"
+              >
+                Save All Details
+              </button>
+              <button
+                style="width: 220px"
+                id="website"
+                type="button"
+                class="btn-verify"
+              >
+                Go to Website
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="/js/popup.js"></script>
+  </body>
+</html>
