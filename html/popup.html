@@ -24,7 +24,7 @@
      -->
     <div class="containerr">
       <div class="heading">
-        <div class="logos">
+        <!-- <div class="logos">
           <div class="logo-circle">
             <img class="logo sam" src="../images/sam.png" alt="sam" />
           </div>
@@ -38,8 +38,8 @@
               alt="vermont"
             />
           </div>
-        </div>
-        <h5>Fill Data for User Verification</h5>
+        </div> -->
+        <h5>Fill Data for the tickets</h5>
       </div>
       <!-- <hr /> -->
       <div class="inner-container">
@@ -125,8 +125,6 @@
                   <option value="04">Minicoy</option>
                 </select>
               </div>
-            </div>
-            <div class="pair">
               <div class="form-group">
                 <select
                   class="form-control input-field"
@@ -144,6 +142,8 @@
                   <option value="S?B">Second</option>
                 </select>
               </div>
+            </div>
+            <div class="pair">
               <div class="form-group">
                 <input
                   type="number"
@@ -153,8 +153,6 @@
                   id="passengers"
                 />
               </div>
-            </div>
-            <div class="pair">
               <div class="form-group">
                 <input
                   type="number"
@@ -174,8 +172,114 @@
                 />
               </div>
             </div>
-            <label class="bold" for="passenger_name">Passenger Details</label>
             <div class="pair">
+              <button
+                style="width: 220px"
+                id="verify"
+                type="submit"
+                class="btn-verify"
+              >
+                Save All Details
+              </button>
+              <button
+                style="width: 220px"
+                id="clear"
+                type="button"
+                class="btn-verify"
+              >
+                Remove All Details
+              </button>
+              <button
+                style="width: 220px"
+                id="website"
+                type="button"
+                class="btn-verify"
+              >
+                Go to Website
+              </button>
+            </div>
+            <div class="pair">
+              <label class="bold" for="passenger_name">Passenger Details</label>
+              <!-- <button
+                id="add_passenger"
+                class="btn-add"
+                style="width: 220px; margin: 0; height: 38px"
+                type="button"
+              >
+                Add Another Passenger
+              </button> -->
+              <!-- make a success bootstrap button -->
+              <button
+                id="add_passenger"
+                class="btn-success"
+                style="width: 220px; margin: 0; height: 38px"
+                type="button"
+              >
+                Add Another Passenger
+              </button>
+            </div>
+            <table id="passenger_table" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Photo ID</th>
+                  <th scope="col">Age</th>
+                  <th scope="col">Gender</th>
+                  <th scope="col">Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control input-field"
+                      name=""
+                      placeholder=""
+                      id=""
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      class="form-control input-field"
+                      name=""
+                      placeholder=""
+                      id=""
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      class="form-control input-field"
+                      name=""
+                      placeholder=""
+                      id=""
+                    />
+                  </td>
+                  <td>
+                    <select name="" class="form-control input-field" id="">
+                      <option value="0">Male</option>
+                      <option value="1">Female</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="" id="" class="form-control input-field">
+                      <option value="Select Category" selected="selected">
+                        Select Category
+                      </option>
+                      <option value="G?1">Government Employee</option>
+                      <option value="I?1">Islander</option>
+                      <option value="P?2">Permit</option>
+                      <option value="R?1">Relatives</option>
+                      <option value="Z?1">Senior Citizen</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- <div class="pair">
               <div class="form-group">
                 <input
                   type="text"
@@ -245,24 +349,34 @@
               </button>
             </div>
 
-            <div class="verify">
-              <button
-                style="width: 220px"
-                id="verify"
-                type="submit"
-                class="btn-verify"
-              >
-                Save All Details
-              </button>
-              <button
-                style="width: 220px"
-                id="website"
-                type="button"
-                class="btn-verify"
-              >
-                Go to Website
-              </button>
-            </div>
+            <Card style="padding: 1rem">
+              <span style="display: inline-block">
+                <span style="font-weight: bold; margin-right: 8px">
+                  Name: Ron Weasley, Photo ID: 1234, Age: 12
+                </span>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  style="margin-left: 20px; margin-top: 10px"
+                >
+                  Delete
+                </button>
+              </span>
+            </Card>
+            <Card style="padding: 1rem">
+              <span style="display: inline-block">
+                <span style="font-weight: bold; margin-right: 8px">
+                  Name: Ron Weasley, Photo ID: 1234, Age: 12
+                </span>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  style="margin-left: 20px; margin-top: 10px"
+                >
+                  Delete
+                </button>
+              </span>
+            </Card> -->
           </form>
         </div>
       </div>

@@ -17,7 +17,7 @@
   ],
   "content_security_policy": {
     "content": "default-src 'self'  data: gap: https://cdnjs.cloudflare.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;",
-    "extension_pages": "script-src 'self'; object-src 'self'"
+    "extension_pages": "script-src 'self'; object-src 'self';"
   },
   "action": {
     "default_popup": "/html/popup.html",

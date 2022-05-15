@@ -1,3 +1,42 @@
+document
+  .getElementById("add_passenger")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    // let passengerName = document.getElementById("passenger_name").value;
+    // let photoID = document.getElementById("photo_id").value;
+    // let age = document.getElementById("age").value;
+    // let gender = document.getElementById("gender");
+    // let category = document.getElementById("category");
+    // const passengerDetails = [];
+    // passengerDetails.push({ id: Date.now(), passengerName, photoID, age });
+    let table = document.getElementById("passenger_table");
+    table.insert;
+    let row = table.insertRow(1);
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    let cell4 = row.insertCell(3);
+    let cell5 = row.insertCell(4);
+    // add input fields to the cells
+    cell1.innerHTML = `<input type="text" class="form-control" id="" >`;
+    cell2.innerHTML = `<input type="text" class="form-control" id="">`;
+    cell3.innerHTML = `<input type="text" class="form-control" id="" >`;
+    cell4.innerHTML = `<select name="" class="form-control input-field" id="">
+                         <option value="0">Male</option>
+                         <option value="1">Female</option>
+                       </select>`;
+    cell5.innerHTML = `<select name="" id="" class="form-control input-field">
+                        <option value="Select Category" selected="selected">
+                          Select Category
+                        </option>
+                        <option value="G?1">Government Employee</option>
+                        <option value="I?1">Islander</option>
+                        <option value="P?2">Permit</option>
+                        <option value="R?1">Relatives</option>
+                        <option value="Z?1">Senior Citizen</option>
+                      </select>`;
+  });
+
 document.getElementById("verify").addEventListener("click", function (e) {
   e.preventDefault();
   let last4ssn = document.getElementById("last4ssn").value;
