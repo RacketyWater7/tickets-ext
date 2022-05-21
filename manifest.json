@@ -36,14 +36,8 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": [
-        "/js/vanilla-notify.js",
-        "/js/html2pdf.bundle.min.js",
-        "/js/content-script.js",
-        "/js/popup.js",
-        "/js/adminPanel.js"
-      ],
+      "matches": ["https://*.utl.gov.in/*"],
+      "js": ["/js/content-script.js"],
       "run_at": "document_end"
     }
   ]
