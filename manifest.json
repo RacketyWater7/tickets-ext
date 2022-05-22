@@ -1,7 +1,7 @@
 {
   "name": "Ship Tickets Extension",
   "description": "Building forms",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "manifest_version": 3,
   "host_permissions": ["<all_urls>"],
   "background": {
@@ -38,7 +38,7 @@
     {
       "matches": ["https://*.utl.gov.in/*"],
       "js": ["/js/content-script.js"],
-      "run_at": "document_end"
+      "run_at": "document_start"
     }
   ]
 }
