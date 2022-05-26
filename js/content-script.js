@@ -190,9 +190,10 @@ const populateShippingDetails = (data) => {
  */
 const populateTicketDetails = (data) => {
   let classs = document.getElementById(
-    "ContentPlaceHolder1_shipclass_DropDownList"
+    "ContentPlaceHolder1_shipclas_DropDownList"
   );
   if (classs) {
+    console.log("here");
     classs.value = data.class;
     classs.dispatchEvent(new Event("change"));
   }
