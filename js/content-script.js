@@ -73,6 +73,14 @@ function init() {
 
         break;
       }
+      case "/shipping/pg_request.aspx": {
+        let paymentBtn = document.getElementById("btPayment");
+        if (paymentBtn) {
+          paymentBtn.click();
+        }
+
+        break;
+      }
       default:
         return false;
     }
@@ -118,7 +126,6 @@ const populateTicketDetails = (data) => {
     "ContentPlaceHolder1_shipclas_DropDownList"
   );
   if (classs) {
-    console.log("here");
     classs.value = data.class;
     classs.dispatchEvent(new Event("change"));
   }
@@ -145,11 +152,33 @@ const populateTicketDetails = (data) => {
       mobile.value = data.mobile;
     }
   }
+  // Radios ids:
+  // ContentPlaceHolder1_shipwaiting_RadioButtonList_0
+  // ContentPlaceHolder1_shipwaiting_RadioButtonList_1
+  // uncheck the RadioButtonList_1 and check the RadioButtonList_0
+  setTimeout(() => {
+    let no = document.getElementById(
+      "ContentPlaceHolder1_shipwaiting_RadioButtonList_1"
+    );
+    let yes = document.getElementById(
+      "ContentPlaceHolder1_shipwaiting_RadioButtonList_0"
+    );
+    if (no) {
+      no.checked = false;
+    }
+    if (yes) {
+      yes.checked = true;
+    }
+  }, 1400);
+
   let NextBtn = document.getElementById(
     "ContentPlaceHolder1_shiptsubmit_Button"
   );
   if (NextBtn) {
-    NextBtn.click();
+    setTimeout(() => {
+      NextBtn.click();
+      NextBtn.dispatchEvent(new Event("click"));
+    }, 1600);
   }
 };
 /**
@@ -209,6 +238,10 @@ const populatePassengerDetails = (data, table) => {
         category.children[0].value = "I?1";
       }
       category.children[0].dispatchEvent(new Event("change"));
+    }
+    let nextBtn = document.getElementById("shiptissue_Button");
+    if (nextBtn) {
+      nextBtn.click();
     }
   }
 };
