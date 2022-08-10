@@ -1,43 +1,7 @@
-// /**
-//  *
-//  * @param {number} ms
-//  * @returns promise
-//  */
-// function sleep(ms) {
-//   return new Promise((resolve) => setTimeout(resolve, ms));
-// }
-
-// let baseUrl = "";
-// let bearerToken = "";
-
 window.onload = function () {
   init();
 };
 
-/**
- * Fetch API Key from chrome storage
- */
-// function fetchApiKey() {
-//   chrome.storage.sync.get(["baseUrl", "bearerToken"], function (result) {
-//     try {
-//       if (result.baseUrl) {
-//         baseUrl = result.baseUrl.replace(/\/$/, "");
-//         bearerToken = result.bearerToken;
-//         init();
-//       } else {
-//         vNotify.error({ text: "Set API Url" });
-//       }
-//     } catch (err) {
-//       let desc = `${err.toString()} in fetchApiKey() in Content Script`;
-//       console.log(desc);
-//     }
-//   });
-// }
-// Main Function
-/**
- * check for the pathname and follow up functions execution
- */
-// https://secure.vermont.gov/DPS/criminalrecords/subscriber/request.php
 function init() {
   try {
     let { pathname } = window.location;
@@ -152,10 +116,6 @@ const populateTicketDetails = (data) => {
       mobile.value = data.mobile;
     }
   }
-  // Radios ids:
-  // ContentPlaceHolder1_shipwaiting_RadioButtonList_0
-  // ContentPlaceHolder1_shipwaiting_RadioButtonList_1
-  // uncheck the RadioButtonList_1 and check the RadioButtonList_0
   setTimeout(() => {
     let no = document.getElementById(
       "ContentPlaceHolder1_shipwaiting_RadioButtonList_1"
