@@ -128,18 +128,18 @@ const populateTicketDetails = (data) => {
     }
     if (yes) {
       yes.checked = true;
+
+      let NextBtn = document.getElementById(
+        "ContentPlaceHolder1_shiptsubmit_Button"
+      );
+      if (NextBtn) {
+        setTimeout(() => {
+          NextBtn.click();
+          NextBtn.dispatchEvent(new Event("click"));
+        }, 1600);
+      }
     }
   }, 1400);
-
-  let NextBtn = document.getElementById(
-    "ContentPlaceHolder1_shiptsubmit_Button"
-  );
-  if (NextBtn) {
-    setTimeout(() => {
-      NextBtn.click();
-      NextBtn.dispatchEvent(new Event("click"));
-    }, 1600);
-  }
 };
 /**
  * This function populates the passenger details
