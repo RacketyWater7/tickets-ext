@@ -74,12 +74,12 @@ const populateShippingDetails = (data) => {
   if (destination) {
     destination.value = data.destination;
   }
-  let bookNow = document.getElementById(
-    "ContentPlaceHolder1_ctl01_seats_dgrid_btnBookNow_0"
-  );
-  if (bookNow) {
-    bookNow.click();
-  }
+  // let bookNow = document.getElementById(
+  //   "ContentPlaceHolder1_ctl01_seats_dgrid_btnBookNow_0"
+  // );
+  // if (bookNow) {
+  //   bookNow.click();
+  // }
 };
 /**
  * This function populates the ticket details
@@ -136,10 +136,10 @@ const populateTicketDetails = (data) => {
         setTimeout(() => {
           NextBtn.click();
           NextBtn.dispatchEvent(new Event("click"));
-        }, 1600);
+        }, 10);
       }
     }
-  }, 1400);
+  }, 500);
 };
 /**
  * This function populates the passenger details
